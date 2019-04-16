@@ -1,0 +1,11 @@
+	#map { width: 100%;  margin:0; padding: 0px; border: 0px; }
+	.store {width: 485px; position:relative; }
+	.store:nth-child(odd) { float:left; }
+	.store:nth-child(even) { float:right; }
+	.store-map { width: 100%; height:250px; margin:0; padding: 0px; border: 0px; }
+	.store-info { position:relative; margin:0; padding: 15px 20px 20px 20px; border: 0px; background-color:#fff; text-align:left; }
+	.store-info dl { font-family:"Lobster"; color:#323233; font-weight:400; font-size:25px;padding:5px 0; }
+	.store-info dl:first-child {padding-bottom:15px;}
+	.store-info dl h3 { font-family:"Lobster"; color:#323233; font-weight:400; font-size:25px; }
+	.store-info dl dt { font-family:"Nunito Sans"; color:#000; font-weight:500; font-size:21px;padding-top:; }
+	.store-info dl dd { font-family:""; color:#666; font-weight:400; font-size:14px;height:20px; line-height:20px; }

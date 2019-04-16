@@ -1,0 +1,46 @@
+.video-content .visual { position:relative;}
+.video-content .visual .item { position:relative;display:table-row;width:100%;text-align:center;background-image:url("../../../images/menu/bg-circle.png"); background-repeat:repeat;background-position:center 0;float:left; padding:150px 0 100px 0;overflow:hidden;}
+.video-content .main_visual::after { position:absolute; width:100%; height:100%; content:""; left:0; top:0;z-index:-1}
+.video-content .visual .description {line-height:1.2;padding:10px 10px;position:absolute; left:0; top:30px;width:100%;}
+.video-content .visual .scoop { margin:20px 0;;}
+.video-content .visual .scoop img { max-width:60%;}
+.video-content .visual .text img { max-width:80%;}
+.visual .pagination { margin-top:20px;}
+.visual .pagination li { display:inline-block;position:relative;margin:0 5px;}
+.visual .pagination li a { display:inline-block;float:left;width:14px; height:14px; border-radius:12px; background-color:#fff;border:1px solid #ccc; font-size:0px; text-indent:-999;box-sizing:border-box;}
+.visual .pagination li a:hover { background-color:#fff; border-width:2px; border-color:#dbc191; }
+.visual .pagination li.current a { background-color:#dbc191; border-color:#dbc191;}
+.owl-nav [class*=owl-] { position:absolute; width:40px; height:40px; font-size:0px; ;top:50%;margin-top:-15px;z-index:999;color:rgba(255,255,255,0.8);font-family:"Font Awesome\ 5 Free" !important; font-weight: 900; line-height:40px;}
+.owl-prev::before, .owl-next::before {  font-size:40px;  content:"";}
+.owl-prev { left:10px;}
+.owl-prev::before {content:"\f053" !important;}
+.owl-next { right:10px;}
+.owl-next::before {content:"\f054"}
+.owl-nav [class*=owl-]:hover {background:transparent; color:#333092;}
+.estimate_section .estimate_main { width:720px; position:relative;margin:0 auto;}
+.owl-dots {display:none;}
+body.fixed .video-content {height:calc(100vh - 40px);margin-top:-90px;}
+body.fixed .video-content .visual { position:fixed;width:calc(100vw); height:calc(100vh);}
+body.fixed .video-content .visual .item { height:100vh; padding-top:280px;}
+body.fixed .video-content .visual .description { top:150px;}
+@media (min-width: 1025px) { 
+	.video-content .visual .scoop { margin:50px 0;}
+	.video-content .visual .scoop img { width:auto;max-height:250px;}
+	.video-content .visual .description {font-size:2.8rem;padding:30px 10px;}
+}
+@media (min-width: 1025px) and (max-width: 1200px) { 
+	.video-content .visual .description {font-size:2.2rem;}
+}
+@media (min-width: 768px) and (max-width: 1024px) { 
+	.video-content .visual .description {font-size:2rem;}
+	.video-content .visual .scoop img { max-width:50%;}
+	.video-content .visual .description {font-size:2.4rem; }
+}
+@media (min-width:415) and (max-width: 767px) { 
+}
+@media (min-width: 320px) and (max-width: 767px) { 
+	.video-content .visual .item { padding-top:90px;}
+	.video-content .visual .scoop img { max-width:40%;}
+	.video-content .visual .description {font-size:2rem;}
+	.video-content .visual .text img { max-width:70%;}
+}

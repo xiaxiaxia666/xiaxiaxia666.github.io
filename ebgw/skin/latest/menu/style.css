@@ -1,0 +1,22 @@
+.main_menu_thumb { clear:both;padding:30px; border-radius:30px;background-color:#fff;}
+.main_menu_thumb::before, .main_menu_thumb ul::after { content:""; display:block; clear:both; ;}
+.main_menu_thumb ul li { float:left; position:relative;width:auto;padding:10px 0px;text-align:center; max-width:25%;width:25%;}
+.menu_image { display:inline-block; padding:10px;/*width:180px; height:180px;border-radius:100%;-moz-border-radius:100%;-webkit-border-radius:100%;background-color:#f9f9f9;*/}
+.text_image { padding-top:10px;height:35px; text-align:center;}
+.text { font-family:"BMJUA" !important; font-size:16px;text-align:center;line-height:18px; height:18px;}
+.article { padding:0 15px;}
+.state_no::before { content:""; position:absolute; width:100%;height:100%; background-color:#fff;left:0px; top:0px; opacity:0.6; -moz-opacity:0.6; -webkit-opacity:0.6;}
+
+.main_menu_thumb ul li .hidden_content { 
+	position:absolute;width:100%; height:100%; left:0%; top:0%; text-align:center;background:rgba(255,255,255,0.8); display:inline;
+	opacity:0; -moz-opacity:0; -webkit-opacity:0; filter:alpha(opacity=0);
+}
+.main_menu_thumb ul li .hidden_content p { 
+	padding:50px 15px 0px 15px; line-height:160%;
+}
+.main_menu_thumb ul li:hover .hidden_content { 
+	opacity:1; -moz-opacity:1; -webkit-opacity:1; filter:alpha(opacity=100);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
